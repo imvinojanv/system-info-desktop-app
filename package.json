@@ -1,0 +1,20 @@
+{
+  "name": "system-info-desktop-app",
+  "version": "1.0.0",
+  "description": "Desktop application built with Electron.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "imvinojanv",
+    "desktop",
+    "app"
+  ],
+  "author": "imvinojanv",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^31.1.0"
+  }
+}

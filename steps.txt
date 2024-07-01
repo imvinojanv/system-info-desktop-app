@@ -1,0 +1,15 @@
+## Init the npm `npm init -y`
+
+## Create new files
+-   index.html
+-   main.js
+
+## Install electron package `npm install electron`
+
+## Modify the start script on package.json files
+-   "start": "electron ."
+
+## Run the Application `npm start`.
+
+## Development
+-   Download a css file from Bootswatch and paste it into the project directory
