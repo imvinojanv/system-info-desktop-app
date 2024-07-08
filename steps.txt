@@ -13,3 +13,11 @@
 
 ## Development
 -   Download a css file from Bootswatch and paste it into the project directory
+-   Import the css file from the project directory
+-   Implement a script in index.html
+-   Create preload.js file and write the functions there
+-   Create renderer.js file to load the content
+
+## Run the App continuously
+-   Install a library (`npm install --save-dev electronmon`)
+-   Change the start script to `electronmon main.js`
