@@ -4,14 +4,20 @@
   "description": "Desktop application built with Electron.js",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electronmon ."
   },
   "keywords": [
-    "electron", "imvinojanv", "desktop", "app"
+    "electron",
+    "imvinojanv",
+    "desktop",
+    "app"
   ],
   "author": "imvinojanv",
   "license": "ISC",
   "dependencies": {
     "electron": "^31.1.0"
+  },
+  "devDependencies": {
+    "electronmon": "^2.0.3"
   }
 }
