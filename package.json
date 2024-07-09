@@ -4,20 +4,50 @@
   "description": "Desktop application built with Electron.js",
   "main": "main.js",
   "scripts": {
-    "start": "electronmon ."
+    "start": "electronmon .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "keywords": [
-    "electron",
-    "imvinojanv",
-    "desktop",
-    "app"
+    "electron app"
   ],
   "author": "imvinojanv",
   "license": "ISC",
-  "dependencies": {
-    "electron": "^31.1.0"
+  "build": {
+    "appId": "com.imvinojanv.systeminfodesktopapp",
+    "productName": "System Info",
+    "copyright": "2024 imvinojanv",
+    "icon": "img/icon.png",
+    "files": [
+      "**/*",
+      "!**/*.map",
+      "!**/*.bat",
+      "!**/*test*",
+      "!**/db.json",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "assets/icons"
+    }
   },
   "devDependencies": {
+    "electron": "^31.1.0",
+    "electron-builder": "^24.13.3",
     "electronmon": "^2.0.3"
   }
 }

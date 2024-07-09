@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="mb-4">
             <h2>System Specifications</h2>
             <ul class="list-group">
-                <li class="list-group-item">Node: ${window.api.getNodeVersion()}</li>
                 <li class="list-group-item">Process Indentifier: ${window.api.getProcessIdentifier()}</li>
                 <li class="list-group-item">Platform: ${window.api.getPlatformInformation()}</li>
             </ul>

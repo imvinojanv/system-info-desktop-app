@@ -4,7 +4,7 @@
 -   index.html
 -   main.js
 
-## Install electron package `npm install electron`
+## Install electron package `npm install --save-dev electron`
 
 ## Modify the start script on package.json files
 -   "start": "electron ."
@@ -21,3 +21,9 @@
 ## Run the App continuously
 -   Install a library (`npm install --save-dev electronmon`)
 -   Change the start script to `electronmon main.js`
+
+## Build the application
+-   Install a library (`npm install --save-dev electron-builder`)
+-   Modify the package.json file ("build" & "script")
+-   Add approperiate icons
+-   Build the application (`npm run dist`)
